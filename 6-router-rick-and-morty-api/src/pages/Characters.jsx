@@ -1,9 +1,9 @@
 import React from 'react'
 
-const characters = () => {
+const Characters = () => {
   return (
-    <div>characters</div>
+    <div>Characters</div>
   )
 }
 
-export default characters
+export default Characters
