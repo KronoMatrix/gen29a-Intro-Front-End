@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 const PersonajeCard = (props) => {
-    const { name, image, status, species } = props;
+    const { name, image, status, species, gender } = props;
     return (
         <div className="col">
             <div className="card" style={{ width: "18rem" }}>
@@ -10,6 +10,7 @@ const PersonajeCard = (props) => {
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text">
                         {status} - {species}
+                        <p>{gender}</p>
                     </p>
                 </div>
                 <div className='card-footer text-center'>

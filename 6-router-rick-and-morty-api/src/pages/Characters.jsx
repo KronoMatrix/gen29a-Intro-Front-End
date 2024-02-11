@@ -30,7 +30,8 @@ const Characters = () => {
         name={personaje.name} 
         image={personaje.image}
         species={personaje.species}
-        status={personaje.status}/>))}
+        status={personaje.status}
+        gender={personaje.gender}/>))}
       </PersonajesList>
     </div>
   )
