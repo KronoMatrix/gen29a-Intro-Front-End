@@ -1,13 +1,14 @@
 
 import './App.css'
-import toDoList from './components/ToDoList'
+import ToDoList from './components/ToDoList'
 
 function App() {
   
 
   return (
     <>
-      <div>toDoList desde la carpeta components</div>
+      <div>Lista de tareas</div>
+      <ToDoList/>
     </>
   )
 }
