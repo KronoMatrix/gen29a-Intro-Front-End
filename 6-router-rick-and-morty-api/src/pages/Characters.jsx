@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import { getAllCharacters } from "../services/characterServices"
+import PersonajesList from "../components/Header/PersonajesList"
+import PersonajeCard from "../components/PersonajeCard"
 
 const Characters = () => {
   const [personajes, setPersonajes] = useState([])
@@ -22,14 +24,14 @@ const Characters = () => {
     <div className="bg-body-tertiary">
       <h1 className="text-center">Characters</h1>
 
-      <div className="album py-5">
-        <div className="container">
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            {personajes.map((personaje) => (<img key={personaje.id} src={personaje.image} alt={personaje.name} />))}
-            <img src="" alt="" />
-          </div>
-        </div>
-      </div>
+      <PersonajesList>
+        {personajes.map((personaje) => (<PersonajeCard 
+        key={personaje.id} 
+        name={personaje.name} 
+        image={personaje.image}
+        species={personaje.species}
+        status={personaje.status}/>))}
+      </PersonajesList>
     </div>
   )
 }
