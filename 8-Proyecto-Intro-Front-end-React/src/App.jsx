@@ -7,7 +7,7 @@ function App() {
 
   return (
     <header>
-      <h1 className='title'>Peli-Perronas</h1>
+      <h1 className='title'>Pelí-Perronas</h1>
     </header>
   )
 }
