@@ -1,9 +1,9 @@
-import {} from "react-router-dom"
+import {} from 'react-router-dom'
 
-const routes = () => {
+const RoutesIndex = () => {
   return (
-    <div>routes</div>
+    <div>RoutesIndex</div>
   )
 }
 
-export default routes
+export default RoutesIndex
