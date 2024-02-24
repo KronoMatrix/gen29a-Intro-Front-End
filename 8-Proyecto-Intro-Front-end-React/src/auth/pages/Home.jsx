@@ -1,5 +1,6 @@
 import { Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
+import MainLayout from '../../movies/layout/MainLayout';
 
 const Home = () => {
 
@@ -18,8 +19,11 @@ const Home = () => {
         getMovies()
     }, [])
 
+     
     return (
-        <div>
+       
+        <MainLayout>
+            <div>
             {
                 movies.map(movie => (
                     <div key={movie.id}>
@@ -29,7 +33,11 @@ const Home = () => {
 
                 ))
             }
-        </div>
+            </div>
+        </MainLayout>
+
+
+   
     )
 }
 
